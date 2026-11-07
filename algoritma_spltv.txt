@@ -1,0 +1,41 @@
+# ALGORITMA PENYELESAIAN SISTEM PERSAMAAN LINEAR 3 VARIABEL (SPLTV)
+# METODE: ELIMINASI GAUSS
+# Mata Kuliah: Komputasi Numerik
+
+## 1. Bentuk Umum SPLTV
+Persamaan 1: a1*x + b1*y + c1*z = d1
+Persamaan 2: a2*x + b2*y + c2*z = d2
+Persamaan 3: a3*x + b3*y + c3*z = d3
+
+## 2. Representasi Matriks (Matriks Diperbesar / Augmented Matrix)
+Representasikan koefisien dan konstanta ke dalam bentuk matriks [A|B]:
+[ a1  b1  c1 | d1 ]
+[ a2  b2  c2 | d2 ]
+[ a3  b3  c3 | d3 ]
+
+## 3. Langkah-Langkah Algoritma
+
+Langkah 1: INPUT DATA
+- Masukkan nilai koefisien matriks A (a1 sampai c3) dan konstanta matriks B (d1 sampai d3).
+
+Langkah 2: ELIMINASI BARIS PERTAMA (Membuat nilai di bawah a1 menjadi 0)
+- Hitung faktor pengali untuk Baris 2: f2 = a2 / a1
+- Ubah Baris 2: Baris 2 = Baris 2 - (f2 * Baris 1)
+- Hitung faktor pengali untuk Baris 3: f3 = a3 / a1
+- Ubah Baris 3: Baris 3 = Baris 3 - (f3 * Baris 1)
+
+Langkah 3: ELIMINASI BARIS KEDUA (Membuat nilai di bawah b2 menjadi 0)
+- Hitung faktor pengali untuk Baris 3 yang baru: f3_baru = b3 / b2
+- Ubah Baris 3: Baris 3 = Baris 3 - (f3_baru * Baris 2)
+- Matriks sekarang telah berubah menjadi Matriks Segitiga Atas.
+
+Langkah 4: SUBSTITUSI MUNDUR (Back Substitution) untuk mencari nilai Variabel
+- Hitung nilai z dari Baris 3: 
+  z = d3 / c3
+- Hitung nilai y dari Baris 2 dengan memasukkan nilai z: 
+  y = (d2 - (c2 * z)) / b2
+- Hitung nilai x dari Baris 1 dengan memasukkan nilai y dan z: 
+  x = (d1 - (b1 * y) - (c1 * z)) / a1
+
+Langkah 5: OUTPUT HASIL
+- Tampilkan nilai x, y, dan z sebagai himpunan penyelesaian dari SPLTV.
