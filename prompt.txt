@@ -1,30 +1,26 @@
-========================================================================
-DOKUMEN RIWAYAT PROMPT BANTUAN AI (POIN 8 & 9)
+DOKUMEN RIWAYAT PROMPT BANTUAN AI 
 Mata Kuliah: Komputasi Numerik
 Nama: Dominika Oktafiani Damung
 NIM: 202511420010
 Prodi: Teknik Informatika - Universitas Dr. Soetomo Surabaya
-========================================================================
+
 
 Berikut adalah daftar perintah (prompt) yang saya gunakan pada platform AI 
 untuk membantu menyelesaikan pencarian algoritma dan penyusunan kode program:
 
 [PROMPT 1 - UNTUK POIN NOMOR 5]
 "Tolong buatkan teks Algoritma Penyelesaian Sistem Persamaan Linear 3 Variabel 
-(SPLTV) menggunakan Metode Eliminasi Gauss, namun jangan menggunakan rumus 
-teoritis variabel abc biasa. Gantikan seluruh langkah kodenya menggunakan 
-studi kasus angka riil yang konkret agar tugas saya unik dan tidak plagiasi 
-dengan mahasiswa lainnya."
+(SPLTV) menggunakan Metode Eliminasi Gauss, 
 
 [PROMPT 2 - UNTUK POIN NOMOR 6]
-"Berdasarkan algoritma angka riil yang sudah dibuat sebelumnya, buatkan 
+"Berdasarkan algoritma yang sudah dibuat sebelumnya, buatkan 
 struktur kode program Python utuh menggunakan library NumPy. Susun kodenya 
 ke dalam bentuk pembarian cell-cell terpisah (Jupyter Notebook / .ipynb) 
 agar bisa saya jalankan (running) satu per satu secara interaktif di Google Colab."
 
 [PROMPT 3 - UNTUK POIN NOMOR 7]
-"Saya ingin mengetik sendiri keterangan penjelasan di dalam file Google Colab 
-saya agar terlihat rapi dan paham logikanya saat dinilai dosen. Tolong berikan 
+"Tolong buatkan keterangan penjelasan di dalam file Githap
+saya agar terlihat rapi dan paham logikanya, dan berikan 
 panduan teks penjelasan per baris kode atau komentar tanda pagar (#) yang 
-singkat, padat, dan mudah diketik manual lewat keyboard komputer saya."
+singkat, padat, dan muda dimengerti."
 
