@@ -1,0 +1,31 @@
+ALGORITMA PENYELESAIAN PERSAMAAN NON-LINEAR (METODE BISECTION)
+STUDI KASUS: f(x) = x^3 - x - 2 = 0
+Dominika Oktafiani Damung (202511420010)
+
+1. PERSAMAAN NON-LINEAR YANG DISELESAIKAN:
+   f(x) = x^3 - x - 2
+
+2. LANGKAH-LANGKAH ALGORITMA:
+
+   LANGKAH 1: INISIALISASI PARAMETER AWAL
+   - Tentukan fungsi non-linear f(x) = x^3 - x - 2.
+   - Tentukan interval batas bawah (a = 1.0) dan batas atas (b = 2.0).
+   - Tentukan batas toleransi galat/error (toleransi = 0.0001).
+
+   LANGKAH 2: VALIDASI SYARAT AKAR (TEOREMA BOLZANO)
+   - Hitung nilai f(a) dan f(b).
+   - Periksa apakah f(a) * f(b) < 0.
+   - Jika hasil perkalian >= 0, hentikan proses karena interval [a, b] tidak mengapit akar persamaan.
+
+   LANGKAH 3: PROSES ITERASI BAGI DUA (BISECTION)
+   - Ulangi langkah berikut selama selisih |b - a| masih lebih besar dari nilai toleransi:
+     a. Hitung titik tengah baru: c = (a + b) / 2.
+     b. Hitung nilai fungsi pada titik tengah: f(c).
+     c. Cek kondisi akar tepat: Jika f(c) == 0, maka c adalah akar sejati dan hentikan iterasi.
+     d. Pembaruan batas interval:
+        - Jika f(a) * f(c) < 0, akar berada di sebelah kiri, maka ubah batas atas (b = c).
+        - Jika tidak, akar berada di sebelah kanan, maka ubah batas bawah (a = c).
+
+   LANGKAH 4: OUTPUT HASIL AKHIR
+   - Jika selisih |b - a| sudah lebih kecil atau sama dengan nilai toleransi, hentikan perulangan.
+   - Tampilkan nilai c terakhir sebagai pendekatan akar persamaan non-linear.
